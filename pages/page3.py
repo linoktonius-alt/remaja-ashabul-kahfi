@@ -1,4 +1,4 @@
 import streamlit as st
 
-st.titlle("settings")
-st.titlle("this page allows you to customize your prefserences")
+st.title("settings")
+st.title("this page allows you to customize your prefserences")
