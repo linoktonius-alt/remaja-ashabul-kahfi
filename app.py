@@ -11,5 +11,5 @@ pg = st.navigation(
     position="sidebar",
     expanded=True
 )
-
+st.write("tugas ashabul kahfi")
 pg.run()
