@@ -1,4 +1,7 @@
 import streamlit as st
+import plotly.express as px
+import numpy as np
+import matplotlib.pyplot as plt
 
 pages = [
     st.Page(page="pages/page1.py", title="Home", icon="🏠"),
@@ -12,4 +15,5 @@ pg = st.navigation(
     expanded=True
 )
 st.write("Tugas Praktikum Big Data")
+
 pg.run()
