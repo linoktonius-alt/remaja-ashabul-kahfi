@@ -13,24 +13,35 @@ st.write("### Perkenalan")
 
 st.markdown(
     """
-    Selamat datang di Website Monitoring Perkembangan Ekonomi Indonesia.
-    Situs ini dibuat untuk memberikan informasi yang ringkas, akurat, dan mudah dipahami mengenai kondisi ekonomi Indonesia dari waktu ke waktu.
+    Situs ini dirancang sebagai sebuah platform informasi ekonomi yang menyajikan data penting mengenai perkembangan kondisi ekonomi Indonesia. Melalui tampilan yang sederhana, interaktif, dan mudah dipahami, situs ini bertujuan untuk membantu pengguna dalam memahami tiga indikator utama perekonomian, yaitu Indeks Harga Konsumen (IHK), Gini Ratio, dan Pertumbuhan Ekonomi.
 
-    Dalam website ini, Anda dapat menemukan berbagai indikator ekonomi penting yang menjadi dasar dalam analisis makroekonomi nasional, antara lain:
+    1. Indeks Harga Konsumen (IHK)
 
-    * **Inflasi** – menggambarkan tingkat kenaikan harga barang dan jasa.
+    Pada bagian IHK, situs ini menampilkan pergerakan harga barang dan jasa konsumsi rumah tangga dari waktu ke waktu. Informasi IHK digunakan untuk mengamati tingkat inflasi dan stabilitas harga. Melalui visualisasi data, pengguna dapat dengan cepat melihat tren kenaikan atau penurunan harga yang terjadi di Indonesia.
 
-    * **Suku Bunga** – mencerminkan kebijakan moneter dan memengaruhi aktivitas kredit serta konsumsi.
+    2. Gini Ratio (Tingkat Ketimpangan)
 
-    * **Kurs Rupiah** – menunjukkan nilai tukar rupiah terhadap mata uang asing yang berdampak pada perdagangan dan stabilitas harga.
+    Situs ini juga menyajikan data Gini Ratio sebagai indikator ketimpangan pendapatan masyarakat. Melalui grafik dan informasi pendukung, pengguna dapat memahami perubahan tingkat kesenjangan ekonomi dari tahun ke tahun, sehingga dapat menjadi dasar analisis pemerataan pembangunan dan kesejahteraan.
 
-    * **Produk Domestik Regional Bruto (PDRB)** – mengilustrasikan kinerja ekonomi di tingkat daerah.
+    3. Pertumbuhan Ekonomi
 
-    * **Pertumbuhan Ekonomi** – memberikan gambaran mengenai ekspansi atau perlambatan aktivitas ekonomi nasional.
+    Pada bagian ini, situs menampilkan data pertumbuhan ekonomi yang diukur melalui Produk Domestik Bruto (PDB). Pengguna dapat melihat bagaimana laju pertumbuhan ekonomi Indonesia bergerak dari waktu ke waktu, serta memahami faktor-faktor yang memengaruhi dinamika ekonomi secara keseluruhan.
 
-    Website ini dirancang untuk membantu mahasiswa, peneliti, pembuat kebijakan, maupun masyarakat umum dalam memahami kondisi ekonomi terkini berbasis data yang tersusun secara visual dan informatif.
+    Tujuan Pengembangan Situs
 
-    Harapannya, melalui penyajian data yang komprehensif dan mudah diakses, pengguna dapat memperoleh insight yang lebih jelas mengenai arah perkembangan ekonomi Indonesia.
+    Situs ini dikembangkan untuk:
+
+    * Menyediakan informasi ekonomi yang akurat dan mudah diakses.
+
+    * Membantu mahasiswa, peneliti, dan masyarakat luas memahami perkembangan kondisi ekonomi Indonesia.
+
+    * Mendorong penggunaan data statistik resmi dalam analisis dan pengambilan keputusan.
+
+    * Menjadikan data ekonomi lebih visual dan informatif melalui grafik, tabel, dan penjelasan yang ringkas.
+
+    Sumber Data
+
+    Seluruh data yang ditampilkan pada situs ini berasal dari Badan Pusat Statistik (BPS)—lembaga resmi penyedia data nasional—sehingga setiap informasi yang disajikan dapat dipertanggungjawabkan secara ilmiah dan akademik.
     """
 )
 
