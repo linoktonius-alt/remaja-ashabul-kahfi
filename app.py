@@ -2,8 +2,8 @@ import streamlit as st
 
 pages = [
     st.Page(page="pages/page1.py", title="Home", icon="🏠"),
-    st.Page(page="pages/page2.py", title="Visualisasi Data", icon="📊"),
-    st.Page(page="pages/page3.py", title="Settings", icon="⚙️",)
+    st.Page(page="pages/page2.py", title="Data Masyarakat", icon="🍕"),
+    st.Page(page="pages/page3.py", title="Profil Pembuat", icon="🍪",)
 ]
 
 pg = st.navigation(
@@ -11,5 +11,5 @@ pg = st.navigation(
     position="sidebar",
     expanded=True
 )
-st.write("tugas ashabul kahfi")
+st.write("Tugas Praktikum Big Data")
 pg.run()
