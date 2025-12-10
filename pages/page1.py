@@ -1,5 +1,5 @@
 import streamlit as st
-# Mengatur tampilan halaman
+
 st.set_page_config(
     page_title="Selamat Datang",
     layout="wide",
