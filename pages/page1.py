@@ -13,35 +13,67 @@ st.write("### Perkenalan")
 
 st.markdown(
     """
-    Situs ini dirancang sebagai sebuah platform informasi ekonomi yang menyajikan data penting mengenai perkembangan kondisi ekonomi Indonesia. Melalui tampilan yang sederhana, interaktif, dan mudah dipahami, situs ini bertujuan untuk membantu pengguna dalam memahami tiga indikator utama perekonomian, yaitu Indeks Harga Konsumen (IHK), Gini Ratio, dan Pertumbuhan Ekonomi.
+    Situs ini merupakan platform penyedia data ekonomi Indonesia yang menampilkan tiga indikator utama, yaitu **Indeks Harga Konsumen (IHK)**,
+    **Kurs Rupiah**, dan **Nilai Impor Indonesia**. Data disajikan secara lengkap dari tahun **2006 hingga 2025**, 
+    sehingga pengguna dapat memahami dinamika ekonomi nasional dalam jangka pendek maupun jangka panjang.
 
-    1. Indeks Harga Konsumen (IHK)
+    ---
+    ### Apa yang Disediakan Situs Ini?
+    Website ini dirancang untuk menjadi pusat informasi dan analisis ekonomi yang mudah dipahami. 
+    Dengan menyediakan data historis hampir dua dekade, pengguna dapat:
+    - Menganalisis perkembangan inflasi melalui **IHK**
+    - Memantau stabilitas nilai tukar melalui **data kurs Rupiah**
+    - Mengamati tren impor Indonesia dari masa ke masa
 
-    Pada bagian IHK, situs ini menampilkan pergerakan harga barang dan jasa konsumsi rumah tangga dari waktu ke waktu. Informasi IHK digunakan untuk mengamati tingkat inflasi dan stabilitas harga. Melalui visualisasi data, pengguna dapat dengan cepat melihat tren kenaikan atau penurunan harga yang terjadi di Indonesia.
+    ---
+    ## 📊 1. Indeks Harga Konsumen (IHK)
+    IHK merupakan indikator utama untuk mengukur **inflasi**.  
+    IHK menggambarkan perubahan harga barang dan jasa yang dikonsumsi masyarakat.
 
-    2. Gini Ratio (Tingkat Ketimpangan)
+    Mengapa IHK penting?
+    - menggambarkan tingkat inflasi bulanan maupun tahunan  
+    - membantu pemerintah dan Bank Indonesia dalam menentukan kebijakan moneter  
+    - memengaruhi daya beli, upah, dan kesejahteraan masyarakat  
+    - menunjukkan tekanan harga dari sisi konsumsi rumah tangga  
 
-    Situs ini juga menyajikan data Gini Ratio sebagai indikator ketimpangan pendapatan masyarakat. Melalui grafik dan informasi pendukung, pengguna dapat memahami perubahan tingkat kesenjangan ekonomi dari tahun ke tahun, sehingga dapat menjadi dasar analisis pemerataan pembangunan dan kesejahteraan.
+    Data IHK dari 2006–2025 membantu pengguna melihat pola inflasi dari waktu ke waktu, termasuk periode krisis global, pandemi, hingga pemulihan ekonomi.
 
-    3. Pertumbuhan Ekonomi
+    ---
+    ## 💱 2. Kurs Rupiah
+    Nilai tukar Rupiah terhadap mata uang asing, khususnya USD, merupakan indikator penting bagi:
+    - perdagangan internasional  
+    - biaya impor  
+    - stabilitas sektor keuangan  
+    - aliran modal dan investasi  
 
-    Pada bagian ini, situs menampilkan data pertumbuhan ekonomi yang diukur melalui Produk Domestik Bruto (PDB). Pengguna dapat melihat bagaimana laju pertumbuhan ekonomi Indonesia bergerak dari waktu ke waktu, serta memahami faktor-faktor yang memengaruhi dinamika ekonomi secara keseluruhan.
+    Dengan data kurs selama 2006–2025, pengguna dapat memahami dampak perubahan kebijakan, kondisi global, dan dinamika ekonomi internasional terhadap nilai tukar Rupiah.
 
-    Tujuan Pengembangan Situs
+    ---
+    ## 🚢 3. Nilai Impor Indonesia
+    Data impor digunakan untuk melihat kebutuhan Indonesia terhadap:
+    - barang konsumsi  
+    - bahan baku industri  
+    - barang modal  
 
-    Situs ini dikembangkan untuk:
+    Tren impor dapat menunjukkan:
+    - kekuatan permintaan domestik  
+    - ketergantungan industri terhadap bahan baku luar negeri  
+    - kondisi pertumbuhan sektor manufaktur  
+    - respon terhadap perubahan harga komoditas global  
 
-    * Menyediakan informasi ekonomi yang akurat dan mudah diakses.
+    Data impor yang panjang (2006–2025) memberikan gambaran lengkap mengenai pola impor sebelum dan sesudah krisis global maupun pandemi.
 
-    * Membantu mahasiswa, peneliti, dan masyarakat luas memahami perkembangan kondisi ekonomi Indonesia.
+    ---
+    ## 🎯 Tujuan Website Ini
+    Platform ini dibuat untuk:
+    - analisis tren ekonomi  
+    - riset akademik dan tugas kuliah  
+    - pembuatan visualisasi grafik  
+    - membantu masyarakat memahami dinamika ekonomi Indonesia  
 
-    * Mendorong penggunaan data statistik resmi dalam analisis dan pengambilan keputusan.
+    Dengan tampilan interaktif, filter dinamis, dan visualisasi yang informatif, situs ini diharapkan menjadi referensi data ekonomi yang mudah diakses oleh mahasiswa, peneliti, maupun publik umum.
 
-    * Menjadikan data ekonomi lebih visual dan informatif melalui grafik, tabel, dan penjelasan yang ringkas.
-
-    Sumber Data
-
-    Seluruh data yang ditampilkan pada situs ini berasal dari Badan Pusat Statistik (BPS)—lembaga resmi penyedia data nasional—sehingga setiap informasi yang disajikan dapat dipertanggungjawabkan secara ilmiah dan akademik.
+    ---
     """
 )
 
