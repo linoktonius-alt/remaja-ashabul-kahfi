@@ -5,7 +5,9 @@ st.set_page_config(
     layout="wide",
 )
 
-st.title("Selamat datang di remaja-ashabul-kahfi")
+st.title("Selamat datang di remaja-ashabul-kahfi 🔐")
+
+st.image("WELCOME_BIGDATA.png", use_container_width=True)
 
 st.markdown("---")
 
