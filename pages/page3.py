@@ -1,6 +1,9 @@
 import streamlit as st
 
 st.title("👥 Profil Pembuat Website")
+
+st.image("PROFIL_BIGDATA.png", use_container_width=True)
+
 st.markdown("---")
 
 st.header("Tentang Tim Kami")
