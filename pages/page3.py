@@ -31,39 +31,26 @@ Menyediakan visualisasi data ekonomi yang menarik, informatif, dan mudah dipaham
 """)
 
 st.markdown("---")
+st.header("😎 Anggota Tim")
 
-st.header("😎Anggota Tim")
-st.write("Berikut adalah anggota yang terlibat dalam pembuatan website ini:")
+anggota = {
+    "Cevin Rizki Octavian": ("021002305005", "Ekonomi Pembangunan"),
+    "Haizar Yusuf Fahrezzy": ("021002305020", "Ekonomi Pembangunan"),
+    "Hafizh Alfani Rizqi": ("021002305016", "Ekonomi Pembangunan"),
+    "Rizkyana Maharani": ("021002305010", "Ekonomi Pembangunan"),
+}
 
-col1, col2, col3, col4 = st.columns(4)
+cols = st.columns(4)
 
-with col1:
-    st.subheader("Cevin Rizki Octavian")
-    st.write("""
-    🆔**NIM:021002305005**  
-    🎓**Program Studi:** Ekonomi Pembangunan   
-    """)
-
-with col2:
-    st.subheader("Haizar Yusuf Fahrezzy")
-    st.write("""
-    🆔 **NIM:021002305020**  
-    🎓**Program Studi:** Ekonomi Pembangunan    
-    """)
-
-with col3:
-    st.subheader("Hafizh Alfani Rizqi")
-    st.write("""
-    🆔**NIM:021002305016**  
-    🎓**Program Studi:** Ekonomi Pembangunan   
-    """)
-
-with col4:
-    st.subheader("Rizkyana Maharani")
-    st.write("""
-    🆔**NIM:021002305010**  
-    🎓**Program Studi:** Ekonomi Pembangunan   
-    """)
+for col, (nama, data) in zip(cols, anggota.items()):
+    with col:
+        st.subheader(nama)
+        st.write(f"""
+        🆔 **NIM:** {data[0]}  
+        🎓 **Program Studi:** {data[1]}
+        """)
+        if st.button(f"👋 Sapa {nama.split()[0]}", key=nama):
+            st.toast(f"Halo dari {nama}! 👋")
 
 st.markdown("---")
 
@@ -78,8 +65,14 @@ st.write("""
 """)
 
 st.markdown("---")
+st.markdown(
+    """
+    <div style='text-align: center; font-size: 18px;'>
+        <i>“Sebutlah namanya, tetap di jalannya. Kelak kau akan mengingat.”</i><br>
+        <b>– Pemuda Ashabul Kahfi ♥</b>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
-st.info("“Sebutlah Namanya Tetap di Jalannya, Kelak Kau Kan Meningat” – Pemuda Ashabul Kahfi ♥")
-
-st.markdown("Terima kasih telah mengunjungi halaman profil kami! 🙏❤️")
-
+st.success("Terima kasih telah mengunjungi halaman profil kami 🙏❤️")
