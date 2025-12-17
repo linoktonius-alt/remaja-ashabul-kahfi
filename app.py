@@ -21,6 +21,10 @@ elif jam < 18:
 else:
     st.error("🌙 Selamat malam, jangan lupa istirahat!")
 
+with st.sidebar:
+    st.markdown("## 📊 Praktikum Big Data")
+    st.caption("Eksplorasi & Visualisasi Data Ekonomi")
+    st.markdown("---")
 
 pages = [
     st.Page("pages/page1.py", title="Home", icon="🏠"),
@@ -34,8 +38,10 @@ pg = st.navigation(
     expanded=True
 )
 
+with st.sidebar:
+    st.caption("💡 *Data tells a story.*")
+    st.caption("© 2025 | REMAJA ASHABUL KAHFI")
 
-st.markdown("---")
 st.caption("© 2025 | REMAJA ASHABUL KAHFI")
 
 pg.run()

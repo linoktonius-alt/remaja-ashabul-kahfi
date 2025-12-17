@@ -2,7 +2,11 @@ import streamlit as st
 
 st.title("👥 Profil Pembuat Website")
 
-st.image("PROFIL_BIGDATA.png", use_container_width=True)
+st.image(
+    "PROFIL_BIGDATA.png",
+    use_container_width=True,
+    caption="Tim Pengembang Dashboard Praktikum Big Data"
+)
 
 st.markdown("---")
 
@@ -56,12 +60,15 @@ st.markdown("---")
 
 st.header("🧰Tools yang Digunakan")
 st.write("""
-- 🐍Python  
-- 🟦Pandas  
-- 📈Matplotlib  
-- 📉Plotly  
-- 🟩Streamlit  
-- 📒Jupyter Lab  
+**Bahasa & Library**
+- 🐍 Python  
+- 🟦 Pandas  
+- 📈 Matplotlib  
+- 📉 Plotly  
+
+**Platform**
+- 🟩 Streamlit  
+- 📒 Jupyter Lab  
 """)
 
 st.markdown("---")
