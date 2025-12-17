@@ -1,4 +1,5 @@
 import streamlit as st
+from datetime import datetime
 
 st.set_page_config(
     page_title="Praktikum Big Data",
@@ -9,7 +10,17 @@ st.set_page_config(
 st.title("📊 Dashboard Praktikum Big Data")
 st.caption("Aplikasi interaktif untuk eksplorasi data dan visualisasi")
 
-st.markdown("---")
+jam = datetime.now().hour
+
+if jam < 11:
+    st.success("🌤️ Selamat pagi, selamat belajar Big Data!")
+elif jam < 15:
+    st.info("☀️ Selamat siang, semangat eksplorasi data!")
+elif jam < 18:
+    st.warning("🌥️ Selamat sore, tetap fokus ya!")
+else:
+    st.error("🌙 Selamat malam, jangan lupa istirahat!")
+
 
 pages = [
     st.Page("pages/page1.py", title="Home", icon="🏠"),
@@ -50,6 +61,6 @@ if mode == "Fokus":
     st.success("Mode fokus aktif — tampilan lebih bersih 👀")
 
 st.markdown("---")
-st.caption("© 2025 | Praktikum Big Data")
+st.caption("© 2025 | REMAJA ASHABUL KAHFI")
 
 pg.run()
