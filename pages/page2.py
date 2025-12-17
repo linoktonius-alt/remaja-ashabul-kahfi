@@ -66,8 +66,30 @@ elif page == "Visualisasi":
             ax.fill_between(df.index, df[kolom_grafik], color=warna_grafik, alpha=0.4)
 
         ax.set_title(f"{jenis}: {kolom_grafik}")
-        ax.set_xlabel("Bulan")
+        ax.set_xlabel("Index")
         ax.set_ylabel(kolom_grafik)
         plt.xticks(rotation=45)
 
         st.pyplot(fig)
+
+        st.write("---")
+        with st.expander("🔍 Interpretasi Data", expanded=False):
+            mean_val = df[kolom_grafik].mean()
+            max_val = df[kolom_grafik].max()
+            min_val = df[kolom_grafik].min()
+            std_val = df[kolom_grafik].std()
+
+            st.write(f"*Rata-rata*: {mean_val:.2f}")
+            st.write(f"*Nilai Tertinggi*: {max_val:.2f}")
+            st.write(f"*Nilai Terendah*: {min_val:.2f}")
+            st.write(f"*Standar Deviasi*: {std_val:.2f}")
+
+            if "Tahun" in df.columns and df["Tahun"].nunique() > 1:
+                df_grouped = df.groupby("Tahun")[kolom_grafik].mean()
+                growth_rate = df_grouped.pct_change().mean() * 100
+                st.write(f"*Pertumbuhan Rata-rata Tahunan*: {growth_rate:.2f}%")
+
+            other_num_cols = [c for c in num_cols if c != kolom_grafik]
+            if other_num_cols:
+                corr = df[other_num_cols + [kolom_grafik]].corr()[kolom_grafik]
+                st.dataframe(corr.drop(kolom_grafik))
