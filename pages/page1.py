@@ -119,7 +119,7 @@ st.markdown(
     """
     <div style='text-align: center; margin-top: 50px;'>
         <p style='font-size: 22px;'><b>Dipersembahkan oleh:</b></p>
-        <p style='font-size: 18px;'>cevin • yana • hapis • ucup</p>
+        <p style='font-size: 18px;'>cevin • kiana • hapis • ucup</p>
     </div>
     """,
     unsafe_allow_html=True
