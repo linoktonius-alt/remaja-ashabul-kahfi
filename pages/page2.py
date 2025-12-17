@@ -58,7 +58,6 @@ elif page == "Visualisasi":
     if len(num_cols) == 0:
         st.error("Tidak ada kolom numerik untuk divisualisasikan.")
     else:
-        # 🔹 1. kolom_grafik DIBUAT DI SINI
         kolom_grafik = st.selectbox(
             "Pilih Kolom untuk Grafik:",
             num_cols
@@ -87,7 +86,6 @@ elif page == "Visualisasi":
 
         st.write("---")
 
-        # 🔹 2. BLOK INTERPRETASI HARUS DI SINI
         with st.expander("🔍 Interpretasi Data", expanded=False):
 
             mean_val = df[kolom_grafik].mean()
