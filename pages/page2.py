@@ -82,7 +82,7 @@ elif page == "Visualisasi":
         ax.set_ylabel(kolom_grafik)
         plt.xticks(rotation=45)
 
-        st.pyplot(fig)
+        st.plotly_chart(fig)
 
         st.write("---")
 
