@@ -16,7 +16,7 @@ st.subheader("📌 Ringkasan Indikator Utama")
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.metric("Indikator", "IHK", "Inflasi")
+    st.metric("Indikator Utama", "IHK", "Inflasi")
 with col2:
     st.metric("Nilai Tukar", "Kurs Rupiah", "USD/IDR")
 with col3:
@@ -39,6 +39,7 @@ st.markdown(
 )
 
 st.markdown("---")
+
 st.subheader("📊 Indikator yang Disediakan")
 
 tab1, tab2, tab3 = st.tabs(["📈 IHK", "💱 Kurs Rupiah", "🚢 Impor Indonesia"])
@@ -47,16 +48,7 @@ with tab1:
     st.markdown(
         """
         **Indeks Harga Konsumen (IHK)** merupakan indikator utama untuk mengukur **inflasi**.
-
-        **Mengapa IHK penting?**
-        - Menggambarkan tingkat inflasi bulanan dan tahunan  
-        - Menjadi dasar kebijakan moneter Bank Indonesia  
-        - Berpengaruh terhadap daya beli dan kesejahteraan masyarakat  
-
-        Data IHK 2006–2025 memungkinkan analisis:
-        - krisis global  
-        - periode pandemi  
-        - fase pemulihan ekonomi
+        Data mencakup tingkat inflasi bulanan (*m-to-m*) yang bersumber dari laporan resmi BPS.
         """
     )
 
@@ -64,37 +56,20 @@ with tab2:
     st.markdown(
         """
         **Kurs Rupiah terhadap USD** mencerminkan stabilitas ekonomi dan keuangan nasional.
-
-        Kurs berperan penting dalam:
-        - perdagangan internasional  
-        - biaya impor  
-        - investasi dan arus modal  
-
-        Dengan data historis panjang, pengguna dapat melihat pengaruh:
-        - kebijakan moneter  
-        - gejolak global  
-        - kondisi ekonomi internasional
+        Data historis ini mencakup fluktuasi nilai tukar harian dan bulanan.
         """
     )
 
 with tab3:
     st.markdown(
         """
-        **Nilai Impor Indonesia** menunjukkan kebutuhan ekonomi terhadap barang luar negeri.
-
-        Impor mencakup:
-        - barang konsumsi  
-        - bahan baku  
-        - barang modal  
-
-        Tren impor membantu memahami:
-        - kekuatan permintaan domestik  
-        - ketergantungan industri  
-        - kondisi sektor manufaktur
+        **Nilai Impor Indonesia** menunjukkan volume perdagangan barang luar negeri (Migas & Non-Migas) 
+        dalam satuan Juta USD.
         """
     )
 
 st.markdown("---")
+
 with st.expander("🎯 Tujuan Pembuatan Website", expanded=False):
     st.markdown(
         """
@@ -103,16 +78,36 @@ with st.expander("🎯 Tujuan Pembuatan Website", expanded=False):
         - riset akademik dan tugas kuliah  
         - pembuatan visualisasi data  
         - meningkatkan literasi ekonomi masyarakat  
-
-        Dengan **filter dinamis**, **grafik interaktif**, dan **interpretasi data otomatis**, 
-        website ini diharapkan menjadi referensi yang mudah diakses oleh:
-        - mahasiswa  
-        - peneliti  
-        - masyarakat umum
         """
     )
 
 st.markdown("---")
+
+st.subheader("📚 Sumber Data Resmi")
+st.info("Seluruh data yang disajikan dalam dashboard ini diperoleh dari sumber terpercaya berikut:")
+
+col_src1, col_src2, col_src3 = st.columns(3)
+
+with col_src1:
+    st.image("https://upload.wikimedia.org/wikipedia/commons/2/28/Lambang_Badan_Pusat_Statistik_%28BPS%29_Indonesia.svg", width=50)
+    st.markdown("**Data Impor Indonesia**")
+    st.caption("Nilai Impor Migas & Non-Migas (Juta USD)")
+    st.link_button("Buka Data BPS", "https://www.bps.go.id/id/statistics-table/2/MTc1NCMy/nilai-impor-migas-nonmigas--juta-us--.html")
+
+with col_src2:
+    st.markdown("### 📊")
+    st.markdown("**Kurs USD/IDR**")
+    st.caption("Data Historis Nilai Tukar Rupiah (Investing.com)")
+    st.link_button("Buka Data Investing", "https://id.investing.com/currencies/usd-idr-historical-data")
+
+with col_src3:
+    st.image("https://upload.wikimedia.org/wikipedia/commons/2/28/Lambang_Badan_Pusat_Statistik_%28BPS%29_Indonesia.svg", width=50)
+    st.markdown("**Inflasi (IHK)**")
+    st.caption("Tingkat Inflasi Konsumen Nasional Bulanan")
+    st.link_button("Buka Data BPS", "https://www.bps.go.id/en/statistics-table/1/OTEzIzE=/tingkat-inflasi-harga-konsumen-nasional-bulanan--m-to-m----sup-1--sup---2022-100-.html")
+
+st.markdown("---")
+
 st.info("👉 Gunakan menu di sidebar untuk mulai melihat **Tabel Data** dan **Visualisasi Grafik**.")
 
 st.markdown(
